@@ -58,8 +58,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-serif font-black text-[#0B1D3A] text-2xl mb-2">Campus Location</h4>
                   <p className="text-slate-600 font-medium leading-relaxed italic text-lg">
-                    HMY English School, Narpoli, <br />
-                    Bhiwandi, Maharashtra 421305
+                    Vidyamandir English School, <br />
+                    Bhiwandi, Maharashtra 421 305
                   </p>
                 </div>
               </div>
@@ -84,8 +84,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-serif font-black text-[#0B1D3A] text-2xl mb-2">Electronic Liaison</h4>
                   <p className="text-slate-600 font-medium leading-relaxed italic text-lg">
-                    info@hmyenglishschool.edu.in <br />
-                    admissions@hmyenglishschool.edu.in
+                    info@vidyamandir.edu.in <br />
+                    admissions@vidyamandir.edu.in
                   </p>
                 </div>
               </div>

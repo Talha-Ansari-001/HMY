@@ -10,6 +10,7 @@ import NoticeBoard from './src/components/NoticeBoard.jsx';
 import AcademicPillars from './src/components/AcademicPillars.jsx';
 import Testimonials from './src/components/Testimonials.jsx';
 import Toppers from './src/components/Toppers.jsx';
+import SalesBanner from './src/components/SalesBanner.jsx';
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
                 className="inline-flex items-center gap-3 px-5 py-2 bg-brand-navy text-brand-gold text-[10px] font-black tracking-[0.4em] uppercase mb-10 shadow-2xl shadow-brand-navy/20 rounded-full"
               >
                 <Sparkles size={12} className="animate-pulse" />
-                30+ Years of Academic Excellence
+                25+ Years of Academic Excellence
               </motion.div>
 
               <motion.h1
@@ -188,7 +189,10 @@ const Home = () => {
 
       <Testimonials />
 
-      {/* Principal's Message - Boutique Prestige */}
+      {/* Sales / Demo Banner for Potential School Buyers */}
+      {/* <SalesBanner /> */}
+
+      {/* Final Conversion CTA - Ultra High End */}
       <section className="py-32 bg-brand-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-24 items-center">
@@ -225,14 +229,14 @@ const Home = () => {
                 <div className="relative mb-12">
                   <Quote className="absolute -top-10 -left-10 text-brand-gold/10" size={120} />
                   <p className="text-xl text-brand-gray-600 leading-relaxed font-medium italic relative z-10 border-l-4 border-brand-gold pl-10">
-                    At HMY English School, our vision is to create a sanctuary of learning where academic rigor meets character development. We believe in the unique potential of every student to become a global changemaker.
+                    At Vidyamandir English School, our vision is to create a sanctuary of learning where academic rigor meets character development. We believe in the unique potential of every student to become a global changemaker.
                   </p>
                 </div>
                 <div className="flex items-center gap-8">
                   <div className="w-20 h-px bg-brand-gold"></div>
                   <div>
-                    <div className="font-serif font-black text-brand-navy text-3xl">Ms. Shifa Ansari</div>
-                    <div className="text-brand-gold font-black tracking-[0.25em] text-[11px] uppercase mt-2">Principal • M.Phil, Mumbai University</div>
+                    <div className="font-serif font-black text-brand-navy text-3xl">Dr. Priya Sharma</div>
+                    <div className="text-brand-gold font-black tracking-[0.25em] text-[11px] uppercase mt-2">Principal • M.Ed, Ph.D — University of Mumbai</div>
                   </div>
                 </div>
               </motion.div>
@@ -260,7 +264,7 @@ const Home = () => {
           </motion.div>
           <h2 className="text-5xl md:text-7xl font-serif font-black mb-12 tracking-tight leading-tight"><span className="text-brand-gold">Your Legacy</span> <span className="text-brand-gold italic">Starts</span> Here.</h2>
           <p className="text-xl text-brand-white/60 mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-            Applications for the academic year 2026-27 are now being reviewed. Join an institution where excellence is a tradition.
+            Applications for the academic year 2026-27 are now being reviewed. Join an institution where excellence is not just a goal — it's a tradition.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <Link to="/admissions" className="px-12 py-6 bg-brand-gold text-brand-navy font-black uppercase tracking-[0.3em] text-xs hover:bg-brand-white transition-all duration-500 rounded-full shadow-[0_20px_50px_-10px_rgba(201,166,70,0.3)] hover:scale-105 active:scale-95">

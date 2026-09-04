@@ -24,7 +24,7 @@ const Navbar = ({ isAlertActive }) => {
   // Dynamic styles based on page context (Dark page vs Light page)
   const navBg = !isDarkPage 
     ? 'bg-white/90 border-slate-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)]' 
-    : 'bg-brand-navy/10 border-white/10 shadow-[0_20px_50px_rgba(201,166,70,0.15)]';
+    : 'bg-brand-navy/10 border-white/10 sha1dow-[0_20px_50px_rgba(201,166,70,0.15)]';
   
   const textColor = !isDarkPage ? 'text-brand-navy' : 'text-white';
   const inactiveTextColor = !isDarkPage ? 'text-brand-navy/60' : 'text-white/70';
@@ -36,7 +36,7 @@ const Navbar = ({ isAlertActive }) => {
       animate={{ 
         opacity: 1, 
         y: 0,
-        top: isAlertActive ? '80px' : '24px'
+        top: isAlertActive ? '92px' : '20px'
       }}
       className="fixed left-0 right-0 mx-auto z-50 w-[95%] max-w-7xl transition-[top] duration-500"
     >
@@ -58,14 +58,14 @@ const Navbar = ({ isAlertActive }) => {
                 animate={{ opacity: 1, y: 0 }}
                 className={`font-serif text-lg md:text-xl font-black tracking-tight leading-none transition-colors duration-300 ${logoColor}`}
               >
-                HMY <span className="text-[#C9A646] italic font-medium">English School</span>
+                Vidyamandir <span className="text-[#C9A646] italic font-medium">English School</span>
               </motion.span>
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 className={`font-mono text-[8px] uppercase tracking-[0.3em] transition-colors duration-300 ${!isDarkPage ? 'text-brand-navy/40' : 'text-white/40'}`}
               >
-                Legacy of Excellence
+                Est. 1998 · Bhiwandi
               </motion.span>
             </div>
           </Link>

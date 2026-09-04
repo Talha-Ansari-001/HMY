@@ -6,24 +6,24 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Elizabeth Montgomery",
-      role: "Parent of Year 9 Student",
-      content: "The academic rigor combined with the focus on character development is what sets HMY apart. My son has not only excelled in his sciences but has also developed a profound sense of leadership and empathy.",
-      location: "Bhiwandi Elite"
+      name: "Ramesh Kulkarni",
+      role: "Parent of 9th Standard Student",
+      content: "The academic rigor combined with the focus on character development is what sets Vidyamandir apart. My son has not only excelled in sciences but has also developed a profound sense of leadership and empathy.",
+      location: "Bhiwandi, Maharashtra"
     },
     {
       id: 2,
-      name: "Dr. Alistair Vance",
+      name: "Dr. Anita Patel",
       role: "Education Consultant",
-      content: "I have visited many schools, but the commitment to SSC academic excellence I've witnessed at HMY English School is truly world-class. Their facilities are second to none in the region.",
-      location: "Maharashtra Board"
+      content: "I have visited many schools across Maharashtra, but the commitment to SSC & CBSE academic excellence I've witnessed here is truly world-class. Their facilities and teaching quality are second to none in the region.",
+      location: "Maharashtra Board Expert"
     },
     {
       id: 3,
-      name: "Sarah Jenkins",
+      name: "Meera Joshi",
       role: "Parent of Jr. KG Student",
-      content: "As a parent, you want an environment that is both safe and stimulating. The early years program at HMY provides exactly that—a perfect blend of nurturing care and intellectual curiosity.",
-      location: "Green Valley"
+      content: "As a parent, you want an environment that is both safe and stimulating. The early years program provides exactly that — a perfect blend of nurturing care and intellectual curiosity for my daughter.",
+      location: "Kalyan, Maharashtra"
     }
   ];
 

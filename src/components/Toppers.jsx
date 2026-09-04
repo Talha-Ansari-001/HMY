@@ -80,7 +80,7 @@ const Toppers = () => {
           </h2>
           <div className="w-32 h-1.5 bg-gradient-to-r from-[#C9A646] via-[#F1D28C] to-[#A38235] mx-auto mb-8 rounded-full"></div>
           <p className="max-w-2xl mx-auto text-slate-500 leading-relaxed font-medium text-lg">
-            Honoring the hard work and dedication of our highest achievers who have set the gold standard for HMY English School.
+            Honoring the hard work and dedication of our highest achievers who have set the gold standard for Vidyamandir English School.
           </p>
         </div>
 

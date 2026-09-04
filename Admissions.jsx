@@ -16,7 +16,7 @@ const Admissions = () => {
 
   const generateTrackingId = () => {
     const random = Math.floor(1000 + Math.random() * 9000);
-    return `HMY-2026-${random}`;
+    return `VES-2026-${random}`;
   };
 
   const handleSubmit = (e) => {
@@ -35,8 +35,8 @@ const Admissions = () => {
         submittedAt: new Date().toISOString()
       };
       
-      const existing = JSON.parse(localStorage.getItem('hmy_inquiries') || '[]');
-      localStorage.setItem('hmy_inquiries', JSON.stringify([...existing, application]));
+      const existing = JSON.parse(localStorage.getItem('ves_inquiries') || '[]');
+      localStorage.setItem('ves_inquiries', JSON.stringify([...existing, application]));
       
       setIsSubmitting(false);
       setShowSuccessModal(true);
@@ -59,7 +59,7 @@ const Admissions = () => {
   const steps = [
     { 
       title: "Initial Inquiry & Campus Visit", 
-      desc: "Begin your journey by visiting our Narpoli campus. Parents can collect the physical prospectus and application form directly from our administrative office while experiencing our world-class facilities." 
+      desc: "Begin your journey by visiting our campus. Parents can collect the physical prospectus and application form directly from our administrative office while experiencing our world-class facilities." 
     },
     { 
       title: "Student & Parent Interaction", 
@@ -71,7 +71,7 @@ const Admissions = () => {
     },
     { 
       title: "Final Enrollment", 
-      desc: "Securing the Seat is finalized through the completion of the admission protocol and fee settlement. Welcome to the tradition of academic dominance at HMY English School." 
+      desc: "Securing the Seat is finalized through the completion of the admission protocol and fee settlement. Welcome to the tradition of academic dominance at Vidyamandir English School." 
     }
   ];
 
@@ -113,7 +113,7 @@ const Admissions = () => {
                 
                 <h3 className="text-4xl lg:text-5xl font-serif font-black text-white mb-6 tracking-tight">Application <br /> <span className="italic text-brand-gold">Confirmed.</span></h3>
                 <p className="text-slate-300 font-medium mb-12 leading-relaxed">
-                  Thank you for your interest in HMY English School. Your inquiry for the <span className="text-white font-bold">2026-27 Academic Session</span> has been successfully logged.
+                  Thank you for your interest in Vidyamandir English School. Your inquiry for the <span className="text-white font-bold">2026-27 Academic Session</span> has been successfully logged.
                 </p>
                 
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-12">
@@ -158,7 +158,7 @@ const Admissions = () => {
             <span className="bg-gradient-to-tr from-[#C9A646] via-[#F1D28C] to-[#A38235] bg-clip-text text-transparent italic font-medium">Journey.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
-            Join Bhiwandi's premier academic institution. We follow a transparent and merit-based admission protocol for Jr. KG to 10th Standard.
+            Join a premier academic institution. We follow a transparent and merit-based admission protocol for Jr. KG to 10th Standard (SSC / CBSE).
           </p>
         </motion.div>
       </div>
