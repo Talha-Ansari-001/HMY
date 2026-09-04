@@ -8,7 +8,7 @@ const Testimonials = () => {
       id: 1,
       name: "Ramesh Kulkarni",
       role: "Parent of 9th Standard Student",
-      content: "The academic rigor combined with the focus on character development is what sets Vidyamandir apart. My son has not only excelled in sciences but has also developed a profound sense of leadership and empathy.",
+      content: "The academic rigor combined with the focus on character development is what sets Aurevia apart. My son has not only excelled in sciences but has also developed a profound sense of leadership and empathy.",
       location: "Bhiwandi, Maharashtra"
     },
     {
@@ -22,7 +22,7 @@ const Testimonials = () => {
       id: 3,
       name: "Meera Joshi",
       role: "Parent of Jr. KG Student",
-      content: "As a parent, you want an environment that is both safe and stimulating. The early years program provides exactly that — a perfect blend of nurturing care and intellectual curiosity for my daughter.",
+      content: "As a parent, you want an environment that is both safe and stimulating. The early years program provides exactly that â€” a perfect blend of nurturing care and intellectual curiosity for my daughter.",
       location: "Kalyan, Maharashtra"
     }
   ];
@@ -87,8 +87,8 @@ const Testimonials = () => {
               </div>
 
               {/* Decorative side quotes */}
-              <div className="absolute top-10 left-10 text-brand-gold/[0.05] font-serif text-[200px] leading-none pointer-events-none select-none">“</div>
-              <div className="absolute bottom-10 right-10 text-brand-gold/[0.05] font-serif text-[200px] leading-none pointer-events-none select-none">”</div>
+              <div className="absolute top-10 left-10 text-brand-gold/[0.05] font-serif text-[200px] leading-none pointer-events-none select-none">â€œ</div>
+              <div className="absolute bottom-10 right-10 text-brand-gold/[0.05] font-serif text-[200px] leading-none pointer-events-none select-none">â€</div>
             </motion.div>
           </AnimatePresence>
 

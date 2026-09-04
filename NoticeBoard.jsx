@@ -116,7 +116,7 @@ const NoticeBoard = () => {
             <span className="bg-gradient-to-tr from-[#C9A646] via-[#F1D28C] to-[#A38235] bg-clip-text text-transparent italic font-medium">Hub.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
-            Real-time updates, official circulars, and academic milestones for the HMY English School community.
+            Real-time updates, official circulars, and academic milestones for the Aurevia International School community.
           </p>
         </motion.div>
       </div>

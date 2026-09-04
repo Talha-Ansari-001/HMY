@@ -2,27 +2,29 @@ import React, { useState } from 'react';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Bot, X, Send } from 'lucide-react';
 
 const MainLayout = ({ children }) => {
   const [isDemoAlertActive, setIsDemoAlertActive] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-brand-white flex flex-col font-sans selection:bg-brand-gold/20 selection:text-brand-navy relative">
       
       {/* Demo Website Indicator Bar */}
       {/* <div className="w-full bg-brand-gold text-brand-navy text-center py-2 text-[10px] font-black uppercase tracking-[0.35em] z-[110] relative flex items-center justify-center gap-4">
-        <span>🏫</span>
-        <span>This is a Demo Website — Customized for Any School in Maharashtra (SSC / CBSE)</span>
-        <span>•</span>
+        <span>ðŸ«</span>
+        <span>This is a Demo Website â€” Customized for Any School in Maharashtra (SSC / CBSE)</span>
+        <span>â€¢</span>
         <a
           href="https://wa.me/919876543210"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-brand-navy/70 transition-colors"
         >
-          Order Yours Now →
+          Order Yours Now â†’
         </a>
-        <span>🏫</span>
+        <span>ðŸ«</span>
       </div> */}
 
       {/* Global Emergency Alert Notice (Demo Mode) */}
@@ -40,7 +42,7 @@ const MainLayout = ({ children }) => {
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="inline-block text-white font-mono text-[11px] uppercase tracking-[0.2em] font-bold"
               >
-                ⚠️ ADMINISTRATIVE ALERT: Heavy rainfall expected in Narpoli, Bhiwandi. Morning Secondary Shift (7:30 AM) will operate entirely online today. Afternoon shifts remain unchanged. &nbsp;&nbsp;&nbsp;&nbsp; ⚠️ ADMINISTRATIVE ALERT: Heavy rainfall expected in Narpoli, Bhiwandi. Morning Secondary Shift (7:30 AM) will operate entirely online today. Afternoon shifts remain unchanged.
+                âš ï¸ ADMINISTRATIVE ALERT: Heavy rainfall expected in Narpoli, Bhiwandi. Morning Secondary Shift (7:30 AM) will operate entirely online today. Afternoon shifts remain unchanged. &nbsp;&nbsp;&nbsp;&nbsp; âš ï¸ ADMINISTRATIVE ALERT: Heavy rainfall expected in Narpoli, Bhiwandi. Morning Secondary Shift (7:30 AM) will operate entirely online today. Afternoon shifts remain unchanged.
               </motion.div>
             </div>
           </motion.div>
@@ -57,9 +59,73 @@ const MainLayout = ({ children }) => {
       
       <Footer />
 
+      {/* AI Chatbot Window */}
+      <AnimatePresence>
+        {isChatOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            className="fixed bottom-[110px] right-8 z-[90] w-80 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden flex flex-col"
+          >
+            {/* Header */}
+            <div className="bg-[#0B1D3A] p-4 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-brand-gold text-[#0B1D3A] rounded-full flex items-center justify-center">
+                  <Bot size={18} />
+                </div>
+                <div>
+                  <h4 className="text-white font-serif font-bold text-sm">Aurevia Assistant</h4>
+                  <span className="text-green-400 text-[10px] uppercase tracking-widest font-black block">Online</span>
+                </div>
+              </div>
+              <button onClick={() => setIsChatOpen(false)} className="text-white/60 hover:text-white transition-colors">
+                <X size={20} />
+              </button>
+            </div>
+            
+            {/* Messages */}
+            <div className="p-4 bg-brand-gray-50 h-64 overflow-y-auto space-y-4">
+              <div className="flex gap-2">
+                <div className="w-6 h-6 bg-[#0B1D3A] text-brand-gold rounded-full flex items-center justify-center shrink-0">
+                  <Bot size={12} />
+                </div>
+                <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-sm text-slate-600 font-medium">
+                  Hello! How can I help you with admissions or general inquiries today?
+                </div>
+              </div>
+            </div>
+            
+            {/* Input */}
+            <div className="p-3 bg-white border-t border-slate-100 flex items-center gap-2">
+              <input type="text" placeholder="Type your message..." className="flex-grow bg-slate-50 border border-slate-100 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-brand-gold transition-colors" />
+              <button className="w-10 h-10 bg-brand-gold text-[#0B1D3A] rounded-full flex items-center justify-center shadow-md hover:bg-[#0B1D3A] hover:text-brand-gold transition-colors shrink-0">
+                <Send size={16} className="-ml-0.5" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Floating AI Chatbot Button */}
+      <motion.button
+        onClick={() => setIsChatOpen(!isChatOpen)}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1.8, duration: 0.5, type: 'spring' }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="fixed bottom-[110px] right-8 z-[80] w-14 h-14 bg-[#0B1D3A] hover:bg-[#142A52] text-brand-gold rounded-full flex items-center justify-center shadow-[0_8px_30px_rgba(11,29,58,0.3)] transition-colors duration-300 group border border-brand-gold/20"
+        title="Chat with AI"
+      >
+        <Bot size={28} />
+        {/* Pulse ring */}
+        <span className="absolute inset-0 rounded-full bg-[#0B1D3A] animate-ping opacity-20" />
+      </motion.button>
+
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Vidyamandir%20English%20School."
+        href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Aurevia%20English%20School."
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0 }}

@@ -1,11 +1,11 @@
-# H. M. Y. Matru English School | Digital Portal
+# Aurevia International School | Digital Portal
 
-A high-end, responsive web platform designed for **H. M. Y. Matru English School**, located in Narpoli, Bhiwandi. This project reflects a sophisticated, trustworthy, and elite educational brand through a modern tech stack and "Oxford Academic" design philosophy.
+A high-end, responsive web platform designed for **Aurevia International School**, located in Narpoli, Bhiwandi. This project reflects a sophisticated, trustworthy, and elite educational brand through a modern tech stack and "Oxford Academic" design philosophy.
 
 ---
 
-## 🏫 School Profile
-- **Institution:** H. M. Y. Matru English School (often referred to as BPS in UI components)
+## ðŸ« School Profile
+- **Institution:** Aurevia International School (often referred to as BPS in UI components)
 - **Principal:** Ms. Shifa Ansari (M.Phil, Mumbai University)
 - **Levels:** Kindergarten (Jr. & Sr. KG) to Secondary (1st - 10th Standard)
 - **Policy:** Exclusive Single-Division Learning
@@ -15,7 +15,7 @@ A high-end, responsive web platform designed for **H. M. Y. Matru English School
 
 ---
 
-## 🎨 Brand Identity & UI/UX
+## ðŸŽ¨ Brand Identity & UI/UX
 The portal follows a **Boutique Educational Branding** strategy:
 - **Tone:** Sophisticated, Trustworthy, Elite, Traditional yet Innovative.
 - **Color Palette:** 
@@ -29,7 +29,7 @@ The portal follows a **Boutique Educational Branding** strategy:
 
 ---
 
-## 🚀 Technical Stack
+## ðŸš€ Technical Stack
 - **Framework:** [React 18](https://reactjs.org/)
 - **Routing:** [React Router Dom v6](https://reactrouter.com/) (Multi-page architecture)
 - **Build Tool:** [Vite](https://vitejs.dev/)
@@ -39,7 +39,7 @@ The portal follows a **Boutique Educational Branding** strategy:
 
 ---
 
-## ✨ Key Features
+## âœ¨ Key Features
 
 ### 1. Oxford-Style Hero Section
 - **Immersive Experience:** Full-height hero with high-contrast typography and cinematic "reveal" animations.
@@ -60,8 +60,8 @@ The portal follows a **Boutique Educational Branding** strategy:
 - **Digital Gazette:** A standalone detailed notice board with categorized updates and historical archives.
 
 ### 5. Multi-Step Admission Protocol
-- **The Journey:** Structured path from Initial Inquiry → Interaction → Documentation → Final Enrollment.
-- **Inquiry Tracker (Demo Mode):** Refactored digital inquiry gateway with local storage persistence and unique tracking ID generation (`HMY-2026-XXXX`).
+- **The Journey:** Structured path from Initial Inquiry â†’ Interaction â†’ Documentation â†’ Final Enrollment.
+- **Inquiry Tracker (Demo Mode):** Refactored digital inquiry gateway with local storage persistence and unique tracking ID generation (`AIS-2026-XXXX`).
 - **Confirmation UX:** Premium glassmorphic success modal confirming application receipt for the 2026-27 session.
 
 ### 6. Interactive Demo & Admin Controls
@@ -76,35 +76,35 @@ The portal follows a **Boutique Educational Branding** strategy:
 
 ---
 
-## 📂 Project Structure
+## ðŸ“‚ Project Structure
 ```text
-HMY/
-├── src/
-│   ├── assets/          # High-resolution branding & photography
-│   └── components/     
-│       ├── AcademicPillars.jsx  # Core educational philosophies
-│       ├── NoticeBoard.jsx      # Interactive preview for Home page
-│       ├── Testimonials.jsx     # Parent & student feedback
-│       └── Toppers.jsx          # Academic achievers gallery
-├── App.jsx             # React Router v6 configuration & ScrollToTop logic
-├── Home.jsx            # Multi-section landing page with Hero & Facility highlights
-├── Academics.jsx       # Curriculum framework with Dynamic Tab Filtering
-├── Admissions.jsx      # Enrollment protocol & Inquiry Tracker with Persistence
-├── Infrastructure.jsx  # Verified facilities gallery & security protocols
-├── Facilities.jsx      # Detailed facilities showcase (Labs, AV Room, Playground)
-├── NoticeBoard.jsx     # Standalone "Digital Gazette" page
-├── Contact.jsx         # Communication hub & location mapping
-├── MainLayout.jsx      # Shared layout with Global Alert System & Demo Controls
-├── Navbar.jsx          # Premium navigation with magnetic hover effects
-├── Footer.jsx          # Detailed site map & split-shift timings
-├── tailwind.config.js  # Custom "Boutique Academic" theme configuration
-└── index.css           # Global styles & custom Framer Motion variants
+Aurevia/
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ assets/          # High-resolution branding & photography
+â”‚   â””â”€â”€ components/     
+â”‚       â”œâ”€â”€ AcademicPillars.jsx  # Core educational philosophies
+â”‚       â”œâ”€â”€ NoticeBoard.jsx      # Interactive preview for Home page
+â”‚       â”œâ”€â”€ Testimonials.jsx     # Parent & student feedback
+â”‚       â””â”€â”€ Toppers.jsx          # Academic achievers gallery
+â”œâ”€â”€ App.jsx             # React Router v6 configuration & ScrollToTop logic
+â”œâ”€â”€ Home.jsx            # Multi-section landing page with Hero & Facility highlights
+â”œâ”€â”€ Academics.jsx       # Curriculum framework with Dynamic Tab Filtering
+â”œâ”€â”€ Admissions.jsx      # Enrollment protocol & Inquiry Tracker with Persistence
+â”œâ”€â”€ Infrastructure.jsx  # Verified facilities gallery & security protocols
+â”œâ”€â”€ Facilities.jsx      # Detailed facilities showcase (Labs, AV Room, Playground)
+â”œâ”€â”€ NoticeBoard.jsx     # Standalone "Digital Gazette" page
+â”œâ”€â”€ Contact.jsx         # Communication hub & location mapping
+â”œâ”€â”€ MainLayout.jsx      # Shared layout with Global Alert System & Demo Controls
+â”œâ”€â”€ Navbar.jsx          # Premium navigation with magnetic hover effects
+â”œâ”€â”€ Footer.jsx          # Detailed site map & split-shift timings
+â”œâ”€â”€ tailwind.config.js  # Custom "Boutique Academic" theme configuration
+â””â”€â”€ index.css           # Global styles & custom Framer Motion variants
 ```
 
 
 ---
 
-## 🛠️ Local Setup & Development
+## ðŸ› ï¸ Local Setup & Development
 
 1. **Install Dependencies:**
    ```bash
@@ -123,10 +123,10 @@ HMY/
 
 ---
 
-## 📝 Developer Notes
+## ðŸ“ Developer Notes
 - **Whitespace:** Prioritize generous padding (Oxford style) to maintain the luxury aesthetic.
 - **Imagery:** Use high-resolution, grayscale-filtered photography for a consistent prestige look.
 - **Routing:** All new pages should be added to the `Routes` component in `App.jsx`.
 
 ---
-*Built with excellence for H. M. Y. Matru English School.*
+*Built with excellence for Aurevia International School.*

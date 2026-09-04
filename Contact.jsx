@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Clock, Send, ArrowRight, Globe, ShieldCheck, Gradu
 
 const Contact = () => {
   return (
-    <div className="bg-brand-white min-h-screen pt-12 selection:bg-brand-gold/20 selection:text-brand-navy">
+    <div className="bg-brand-white min-h-screen selection:bg-brand-gold/20 selection:text-brand-navy">
       
       {/* Premium Header - Enhanced Padding for consistency */}
       <div className="bg-[#0B1D3A] pt-48 pb-60 text-center relative overflow-hidden z-10">
@@ -58,7 +58,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-serif font-black text-[#0B1D3A] text-2xl mb-2">Campus Location</h4>
                   <p className="text-slate-600 font-medium leading-relaxed italic text-lg">
-                    Vidyamandir English School, <br />
+                    Aurevia International School, <br />
                     Bhiwandi, Maharashtra 421 305
                   </p>
                 </div>
@@ -84,8 +84,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-serif font-black text-[#0B1D3A] text-2xl mb-2">Electronic Liaison</h4>
                   <p className="text-slate-600 font-medium leading-relaxed italic text-lg">
-                    info@vidyamandir.edu.in <br />
-                    admissions@vidyamandir.edu.in
+                    info@Aurevia.edu.in <br />
+                    admissions@Aurevia.edu.in
                   </p>
                 </div>
               </div>
@@ -97,8 +97,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-serif font-black text-[#0B1D3A] text-2xl mb-2">Administrative Hours</h4>
                   <p className="text-[#0B1D3A]/60 font-black tracking-[0.2em] text-[13px] uppercase">
-                    Monday — Saturday <br />
-                    08:00 AM — 03:00 PM
+                    Monday â€” Saturday <br />
+                    08:00 AM â€” 03:00 PM
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                   <p className="text-slate-400 text-xs font-black uppercase tracking-[0.4em]">Precision Location Mapping</p>
                 </div>
                 <div className="absolute bottom-6 right-8 text-[10px] text-white/20 font-black uppercase tracking-[0.3em]">
-                  Narpoli • Bhiwandi • MH
+                  Narpoli â€¢ Bhiwandi â€¢ MH
                 </div>
               </div>
             </motion.div>

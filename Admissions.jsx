@@ -16,7 +16,7 @@ const Admissions = () => {
 
   const generateTrackingId = () => {
     const random = Math.floor(1000 + Math.random() * 9000);
-    return `VES-2026-${random}`;
+    return `AIS-2026-${random}`;
   };
 
   const handleSubmit = (e) => {
@@ -71,7 +71,7 @@ const Admissions = () => {
     },
     { 
       title: "Final Enrollment", 
-      desc: "Securing the Seat is finalized through the completion of the admission protocol and fee settlement. Welcome to the tradition of academic dominance at Vidyamandir English School." 
+      desc: "Securing the Seat is finalized through the completion of the admission protocol and fee settlement. Welcome to the tradition of academic dominance at Aurevia International School." 
     }
   ];
 
@@ -113,7 +113,7 @@ const Admissions = () => {
                 
                 <h3 className="text-4xl lg:text-5xl font-serif font-black text-white mb-6 tracking-tight">Application <br /> <span className="italic text-brand-gold">Confirmed.</span></h3>
                 <p className="text-slate-300 font-medium mb-12 leading-relaxed">
-                  Thank you for your interest in Vidyamandir English School. Your inquiry for the <span className="text-white font-bold">2026-27 Academic Session</span> has been successfully logged.
+                  Thank you for your interest in Aurevia International School. Your inquiry for the <span className="text-white font-bold">2026-27 Academic Session</span> has been successfully logged.
                 </p>
                 
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-12">

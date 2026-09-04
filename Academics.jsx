@@ -36,11 +36,12 @@ const Academics = () => {
   const tabs = ['PRE-PRIMARY', 'PRIMARY', 'SECONDARY'];
 
   return (
-    <div className="bg-brand-navy min-h-screen selection:bg-brand-gold/20 selection:text-brand-gold">
+    <div className="bg-brand-white min-h-screen selection:bg-brand-gold/20 selection:text-brand-navy">
       
       {/* Header Section */}
-      <div className="pt-48 pb-32 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,166,70,0.05),transparent)]" />
+      <div className="bg-[#0B1D3A] pt-48 pb-60 text-center relative overflow-hidden z-10">
+        <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-gold/5 blur-[150px] rounded-full -mr-64 -mt-64" />
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -58,22 +59,22 @@ const Academics = () => {
           
           <h1 className="text-6xl md:text-8xl font-serif font-black text-white mb-10 tracking-tight leading-none">
             Legacy <br />
-            <span className="text-brand-gold italic font-medium">Curriculum.</span>
+            <span className="bg-gradient-to-tr from-[#C9A646] via-[#F1D28C] to-[#A38235] bg-clip-text text-transparent italic font-medium">Curriculum.</span>
           </h1>
         </motion.div>
       </div>
 
       {/* Dynamic Class Filter - Tab Interface */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-24">
-        <div className="flex flex-wrap justify-center gap-4 border-b border-white/5 pb-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 -mt-32 relative z-20 mb-24">
+        <div className="flex flex-wrap justify-center gap-4 border-b border-slate-200 pb-8">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`relative px-8 py-4 font-mono text-[11px] uppercase tracking-[0.3em] transition-all duration-500 rounded-full ${
                 activeTab === tab 
-                  ? 'bg-brand-gold text-brand-navy font-bold' 
-                  : 'text-white/40 hover:text-white hover:bg-white/5'
+                  ? 'bg-[#0B1D3A] text-brand-gold font-bold shadow-xl' 
+                  : 'text-slate-500 hover:text-[#0B1D3A] hover:bg-slate-50'
               }`}
             >
               [ {tab} ]
@@ -101,21 +102,21 @@ const Academics = () => {
           >
             {/* Left: Detail Card */}
             <div className="lg:col-span-3">
-              <div className="bg-white/5 backdrop-blur-xl p-12 lg:p-20 border border-white/5 relative group rounded-[3rem] shadow-ambient">
+              <div className="bg-white p-12 lg:p-20 border border-slate-100 relative group rounded-[3rem] shadow-[0_30px_100px_-15px_rgba(11,29,58,0.1)]">
                 <div className="w-20 h-20 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-12 group-hover:scale-105 transition-transform duration-500">
                   {React.createElement(content[activeTab].icon, { size: 40, strokeWidth: 1.2 })}
                 </div>
                 
-                <h2 className="text-5xl lg:text-7xl font-serif font-black text-white mb-4 tracking-tight">{content[activeTab].title}</h2>
+                <h2 className="text-5xl lg:text-7xl font-serif font-black text-[#0B1D3A] mb-4 tracking-tight">{content[activeTab].title}</h2>
                 <div className="font-mono text-brand-gold text-[12px] uppercase tracking-[0.4em] mb-12">{content[activeTab].levels}</div>
                 
-                <p className="text-slate-400 mb-16 leading-relaxed font-medium text-xl italic border-l-4 border-brand-gold/20 pl-10 max-w-2xl">
+                <p className="text-slate-600 mb-16 leading-relaxed font-medium text-xl italic border-l-4 border-brand-gold/40 pl-10 max-w-2xl">
                   {content[activeTab].desc}
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
                   {content[activeTab].subjects.map(s => (
-                    <span key={s} className="px-6 py-3 bg-white/5 text-white/80 text-[10px] font-mono uppercase tracking-widest border border-white/5 rounded-full">
+                    <span key={s} className="px-6 py-3 bg-brand-gray-50 text-[#0B1D3A] text-[10px] font-mono uppercase tracking-widest border border-slate-200 rounded-full font-bold">
                       {s}
                     </span>
                   ))}
@@ -125,18 +126,18 @@ const Academics = () => {
 
             {/* Right: Shift Schedule */}
             <div className="lg:col-span-2">
-              <div className="bg-white/5 backdrop-blur-xl p-12 border border-brand-gold/20 rounded-[3rem] shadow-2xl relative overflow-hidden group">
+              <div className="bg-white p-12 border border-slate-100 rounded-[3rem] shadow-[0_30px_100px_-15px_rgba(11,29,58,0.1)] relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-8 opacity-10">
                   <Clock size={120} strokeWidth={0.5} className="text-brand-gold" />
                 </div>
                 
                 <span className="font-mono text-brand-gold text-[10px] uppercase tracking-[0.4em] mb-8 block">Verified Shift Timing</span>
-                <h4 className="font-serif text-3xl font-black text-white mb-12 tracking-tight">Institutional <br /> <span className="italic text-brand-gold">Rhythm.</span></h4>
+                <h4 className="font-serif text-3xl font-black text-[#0B1D3A] mb-12 tracking-tight">Institutional <br /> <span className="italic text-brand-gold">Rhythm.</span></h4>
                 
                 <div className="space-y-8">
                   <div className="flex flex-col gap-2">
-                    <span className="text-white/40 text-[10px] font-mono uppercase tracking-widest">{content[activeTab].shift.range}</span>
-                    <div className="text-4xl font-mono font-black text-white tracking-tighter bg-white/5 px-8 py-6 border border-white/5 rounded-2xl shadow-ambient group-hover:border-brand-gold/30 transition-all duration-500">
+                    <span className="text-slate-400 text-[10px] font-mono uppercase tracking-widest">{content[activeTab].shift.range}</span>
+                    <div className="text-4xl font-mono font-black text-[#0B1D3A] tracking-tighter bg-brand-gray-50 px-8 py-6 border border-slate-100 rounded-2xl shadow-sm group-hover:border-brand-gold/30 transition-all duration-500">
                       {content[activeTab].shift.time}
                     </div>
                   </div>
@@ -147,12 +148,12 @@ const Academics = () => {
               </div>
 
               {/* Accreditations Link */}
-              <div className="mt-8 p-10 bg-brand-gold/5 border border-white/5 rounded-[2rem] flex items-center justify-between group cursor-pointer hover:bg-brand-gold/10 transition-all">
+              <div className="mt-8 p-10 bg-brand-gray-50 border border-slate-100 rounded-[2rem] flex items-center justify-between group cursor-pointer hover:bg-brand-gold/10 transition-all">
                 <div>
-                  <h5 className="text-white font-serif font-bold text-lg">Board Compliance</h5>
+                  <h5 className="text-[#0B1D3A] font-serif font-bold text-lg">Board Compliance</h5>
                   <p className="text-white/40 text-[10px] font-mono uppercase tracking-widest mt-1">MSBSHSE SSC Standard</p>
                 </div>
-                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-brand-gold group-hover:translate-x-2 transition-transform">
+                <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-brand-gold group-hover:translate-x-2 transition-transform">
                   <ArrowRight size={20} />
                 </div>
               </div>
@@ -162,13 +163,13 @@ const Academics = () => {
       </div>
 
       {/* CTA Strip */}
-      <div className="bg-white/5 backdrop-blur-xl border-y border-white/5 py-24 relative overflow-hidden">
+      <div className="bg-brand-gray-50 border-y border-slate-100 py-24 relative overflow-hidden">
          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-12 relative z-10">
             <div className="text-center lg:text-left">
-               <h3 className="text-4xl font-serif font-black text-white mb-4 tracking-tight">Admissions 2026-27.</h3>
-               <p className="font-mono text-brand-gold/60 text-[11px] uppercase tracking-widest italic">Premier SSC Instruction in Bhiwandi</p>
+               <h3 className="text-4xl font-serif font-black text-[#0B1D3A] mb-4 tracking-tight">Admissions 2026-27.</h3>
+               <p className="font-mono text-brand-gold text-[11px] uppercase tracking-widest italic font-bold">Premier SSC Instruction in Bhiwandi</p>
             </div>
-            <Link to="/admissions" className="px-12 py-6 bg-brand-gold text-brand-navy font-mono uppercase tracking-[0.3em] text-[11px] hover:bg-white transition-all duration-500 rounded-none shadow-ambient flex items-center gap-4 group">
+            <Link to="/admissions" className="px-12 py-6 bg-[#0B1D3A] text-brand-gold font-mono uppercase tracking-[0.3em] text-[11px] hover:bg-brand-gold hover:text-[#0B1D3A] transition-all duration-500 rounded-2xl shadow-xl flex items-center gap-4 group">
                Start Registration <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
          </div>

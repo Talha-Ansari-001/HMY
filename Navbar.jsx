@@ -24,7 +24,7 @@ const Navbar = ({ isAlertActive }) => {
   // Dynamic styles based on page context (Dark page vs Light page)
   const navBg = !isDarkPage 
     ? 'bg-white/90 border-slate-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)]' 
-    : 'bg-brand-navy/10 border-white/10 sha1dow-[0_20px_50px_rgba(201,166,70,0.15)]';
+    : 'bg-brand-navy/10 border-white/10 shadow-[0_20px_50px_rgba(201,166,70,0.15)]';
   
   const textColor = !isDarkPage ? 'text-brand-navy' : 'text-white';
   const inactiveTextColor = !isDarkPage ? 'text-brand-navy/60' : 'text-white/70';
@@ -40,30 +40,30 @@ const Navbar = ({ isAlertActive }) => {
       }}
       className="fixed left-0 right-0 mx-auto z-50 w-[95%] max-w-7xl transition-[top] duration-500"
     >
-      <div className={`transition-all duration-500 rounded-full border backdrop-blur-md px-6 py-3 md:px-10 ${navBg}`}>
-        <div className="flex justify-between items-center">
+      <div className={`transition-all duration-500 rounded-full border backdrop-blur-md px-4 sm:px-6 py-3 md:px-8 xl:px-10 ${navBg}`}>
+        <div className="flex justify-between items-center gap-2 sm:gap-4">
           {/* Logo Section */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ rotate: 5, scale: 1.05 }}
-              className="bg-brand-navy p-1.5 rounded-full text-brand-gold shadow-ambient"
+              className="bg-brand-navy p-1.5 rounded-full text-brand-gold shadow-ambient shrink-0"
             >
               <GraduationCap size={20} strokeWidth={1.5} />
             </motion.div>
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`font-serif text-lg md:text-xl font-black tracking-tight leading-none transition-colors duration-300 ${logoColor}`}
+                className={`font-serif text-base sm:text-lg md:text-xl font-black tracking-tight leading-none whitespace-nowrap transition-colors duration-300 ${logoColor}`}
               >
-                Vidyamandir <span className="text-[#C9A646] italic font-medium">English School</span>
+                Aurevia <span className="text-[#C9A646] italic font-medium">English School</span>
               </motion.span>
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`font-mono text-[8px] uppercase tracking-[0.3em] transition-colors duration-300 ${!isDarkPage ? 'text-brand-navy/40' : 'text-white/40'}`}
+                className={`font-mono text-[8px] uppercase tracking-[0.3em] whitespace-nowrap transition-colors duration-300 ${!isDarkPage ? 'text-brand-navy/40' : 'text-white/40'}`}
               >
                 Est. 1998 · Bhiwandi
               </motion.span>
@@ -71,38 +71,42 @@ const Navbar = ({ isAlertActive }) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            <div className="flex items-center gap-6">
-              {navLinks.map((link) => (
-                <Link 
-                  key={link.path} 
-                  to={link.path}
-                  className={`relative group px-2 py-1 font-mono text-[13px] uppercase tracking-widest transition-all duration-300 ${
-                    location.pathname === link.path 
-                      ? `${textColor} font-semibold` 
-                      : `${inactiveTextColor} hover:text-[#C9A646]`
-                  }`}
-                >
-                  <motion.span
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8">
+            <div className="flex items-center gap-2 xl:gap-6">
+              {navLinks.map((link) => {
+                const isActive = location.pathname === link.path;
+                return (
+                  <Link 
+                    key={link.path} 
+                    to={link.path}
+                    className={`relative group px-1.5 xl:px-2 py-1 font-mono text-[11px] xl:text-[13px] uppercase tracking-wider xl:tracking-widest whitespace-nowrap transition-all duration-300 ${
+                      isActive 
+                        ? `${textColor} font-semibold` 
+                        : `${inactiveTextColor} hover:text-[#C9A646]`
+                    }`}
                   >
-                    {link.name}
-                  </motion.span>
-                  {/* Expanding Underline */}
-                  <motion.span 
-                    className="absolute bottom-0 left-0 right-0 h-[1px] bg-brand-gold origin-center"
-                    initial={{ scaleX: location.pathname === link.path ? 1 : 0 }}
-                    whileHover={{ scaleX: 1 }}
-                    transition={{ duration: 0.3, ease: "circOut" }}
-                  />
-                </Link>
-              ))}
+                    <motion.span
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                    >
+                      {link.name}
+                    </motion.span>
+                    {/* Expanding Underline */}
+                    <span 
+                      className={`absolute bottom-0 left-0 right-0 h-[1.5px] bg-brand-gold origin-center transition-transform duration-300 ease-out pointer-events-none ${
+                        isActive 
+                          ? 'scale-x-100' 
+                          : 'scale-x-0 group-hover:scale-x-100'
+                      }`}
+                    />
+                  </Link>
+                );
+              })}
             </div>
             
             <Link 
               to="/admissions" 
-              className="px-6 py-2.5 bg-brand-gold text-brand-navy font-mono text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-brand-navy hover:text-brand-gold transition-all duration-500 rounded-full shadow-ambient flex items-center gap-2 group border border-brand-gold"
+              className="px-4 xl:px-6 py-2 xl:py-2.5 bg-brand-gold text-brand-navy font-mono text-[10px] xl:text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-brand-navy hover:text-brand-gold transition-all duration-500 rounded-full shadow-ambient flex items-center gap-2 group border border-brand-gold shrink-0 whitespace-nowrap"
             >
               <motion.span
                 initial={{ opacity: 0, y: 20 }}

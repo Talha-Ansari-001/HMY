@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, ArrowRight, GraduationCap, Quote, CheckCircle2, Play, Globe, Shield, Sparkles, BookOpen, Microscope, Computer, Tv, PlayCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import HMY_School from './src/assets/HMY_School.jpg';
+import Aurevia_School from './src/assets/Aurevia_School.jpg';
 import Principal from './src/assets/Principal.jpg';
 
 // Sub-components
@@ -111,7 +111,7 @@ const Home = () => {
                   }}
                 >
                   <img
-                    src={HMY_School}
+                    src={Aurevia_School}
                     alt="BPS Students"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s] ease-out"
                   />
@@ -229,14 +229,14 @@ const Home = () => {
                 <div className="relative mb-12">
                   <Quote className="absolute -top-10 -left-10 text-brand-gold/10" size={120} />
                   <p className="text-xl text-brand-gray-600 leading-relaxed font-medium italic relative z-10 border-l-4 border-brand-gold pl-10">
-                    At Vidyamandir English School, our vision is to create a sanctuary of learning where academic rigor meets character development. We believe in the unique potential of every student to become a global changemaker.
+                    At Aurevia International School, our vision is to create a sanctuary of learning where academic rigor meets character development. We believe in the unique potential of every student to become a global changemaker.
                   </p>
                 </div>
                 <div className="flex items-center gap-8">
                   <div className="w-20 h-px bg-brand-gold"></div>
                   <div>
-                    <div className="font-serif font-black text-brand-navy text-3xl">Dr. Priya Sharma</div>
-                    <div className="text-brand-gold font-black tracking-[0.25em] text-[11px] uppercase mt-2">Principal • M.Ed, Ph.D — University of Mumbai</div>
+                    <div className="font-serif font-black text-brand-navy text-3xl">Dr. Ayesha Khan</div>
+                    <div className="text-brand-gold font-black tracking-[0.25em] text-[11px] uppercase mt-2">Principal â€¢ M.Ed, Ph.D â€” University of Mumbai</div>
                   </div>
                 </div>
               </motion.div>
@@ -264,7 +264,7 @@ const Home = () => {
           </motion.div>
           <h2 className="text-5xl md:text-7xl font-serif font-black mb-12 tracking-tight leading-tight"><span className="text-brand-gold">Your Legacy</span> <span className="text-brand-gold italic">Starts</span> Here.</h2>
           <p className="text-xl text-brand-white/60 mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-            Applications for the academic year 2026-27 are now being reviewed. Join an institution where excellence is not just a goal — it's a tradition.
+            Applications for the academic year 2026-27 are now being reviewed. Join an institution where excellence is not just a goal â€” it's a tradition.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <Link to="/admissions" className="px-12 py-6 bg-brand-gold text-brand-navy font-black uppercase tracking-[0.3em] text-xs hover:bg-brand-white transition-all duration-500 rounded-full shadow-[0_20px_50px_-10px_rgba(201,166,70,0.3)] hover:scale-105 active:scale-95">

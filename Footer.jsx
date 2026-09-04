@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="max-w-xl text-center lg:text-left">
               <h3 className="font-serif text-3xl md:text-4xl text-white font-black mb-4 tracking-tight">Join Our Community</h3>
               <p className="text-slate-400 font-medium leading-relaxed italic">
-                Stay updated with Vidyamandir English School’s latest news, academic announcements, and SSC board updates.
+                Stay updated with Aurevia International Schoolâ€™s latest news, academic announcements, and SSC board updates.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row w-full lg:w-auto gap-4">
@@ -43,12 +43,12 @@ const Footer = () => {
                 <GraduationCap size={32} strokeWidth={1.5} />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif text-2xl font-black text-brand-gold leading-none tracking-tight">VIDYAMANDIR</span>
+                <span className="font-serif text-2xl font-black text-brand-gold leading-none tracking-tight">Aurevia</span>
                 <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 mt-1 font-black">English Medium School</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-slate-400 font-medium">
-              A premium SSC/CBSE English Medium School website — built to inspire trust, drive admissions, and showcase excellence.
+              A premium SSC/CBSE English Medium School website â€” built to inspire trust, drive admissions, and showcase excellence.
             </p>
             <div className="flex gap-5">
               {[
@@ -128,7 +128,7 @@ const Footer = () => {
                   <MapPin size={20} />
                 </div>
                 <p className="text-sm leading-relaxed text-slate-400 font-medium">
-                  Bhiwandi, <br />
+                  Mumbai, <br />
                   Maharashtra, India 421305
                 </p>
               </div>
@@ -142,7 +142,7 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-brand-gold border border-white/5">
                   <Mail size={20} />
                 </div>
-                <p className="text-sm font-medium text-slate-400">info@vidyamandir.edu.in</p>
+                <p className="text-sm font-medium text-slate-400">info@Aurevia.edu.in</p>
               </div>
               <div className="flex items-center gap-5">
                 <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-brand-gold border border-white/5">
@@ -158,7 +158,7 @@ const Footer = () => {
         <div className="mt-24 pt-10 border-t border-white/5 flex flex-col lg:flex-row justify-between items-center gap-8 text-center lg:text-left">
           <div className="space-y-2">
             <p className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-500">
-              &copy; {new Date().getFullYear()} Vidyamandir English School. All rights reserved.
+              &copy; {new Date().getFullYear()} Aurevia International School. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600">
               <a href="#" className="hover:text-brand-gold transition-colors">Privacy Policy</a>

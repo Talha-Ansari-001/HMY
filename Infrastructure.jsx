@@ -28,7 +28,7 @@ const Infrastructure = () => {
             animate={{ opacity: 1 }}
             className="text-brand-gold font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block"
           >
-            The HMY English Infrastructure
+            The Aurevia International Infrastructure
           </motion.span>
           <h1 className="text-6xl md:text-8xl font-serif font-black text-white mb-10 tracking-tight leading-none">
             Elite <br />
@@ -47,20 +47,18 @@ const Infrastructure = () => {
           {/* Computer Labs */}
           <motion.div 
             {...fadeInUp}
-            className="relative group overflow-hidden bg-[#0B1D3A] rounded-[3rem] p-2 shadow-2xl h-[500px]"
+            className="relative group overflow-hidden bg-white rounded-[3rem] p-2 border border-slate-100 shadow-xl h-[500px]"
           >
-            <div className="absolute inset-0 bg-[#0B1D3A]/40 z-10 group-hover:bg-transparent transition-all duration-700" />
-            <img 
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80" 
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100 rounded-[2.5rem]" 
+            <div className="absolute inset-0 bg-brand-gold/5 group-hover:bg-transparent transition-colors z-10" />
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80" className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all duration-700 grayscale rounded-[2.5rem]" 
               alt="Computer Labs"
             />
             <div className="absolute bottom-12 left-12 z-20">
-              <div className="w-12 h-12 bg-brand-gold text-brand-navy flex items-center justify-center mb-6 shadow-xl rounded-2xl">
+              <div className="w-12 h-12 bg-[#0B1D3A] text-brand-gold flex items-center justify-center mb-6 shadow-xl rounded-2xl">
                 <Computer size={24} strokeWidth={1.5} />
               </div>
-              <h3 className="text-4xl font-serif font-black text-white mb-3 italic">Computer <span className="not-italic text-brand-gold">Labs</span></h3>
-              <p className="text-white/60 text-[10px] font-black uppercase tracking-[0.3em]">High-Performance Systems</p>
+              <h3 className="text-4xl font-serif font-black text-[#0B1D3A] mb-3 italic">Computer <span className="not-italic">Labs</span></h3>
+              <p className="text-[#0B1D3A]/40 text-[10px] font-black uppercase tracking-[0.3em]">High-Performance Systems</p>
             </div>
           </motion.div>
 
@@ -87,20 +85,18 @@ const Infrastructure = () => {
           {/* Playground */}
           <motion.div 
             {...fadeInUp}
-            className="relative group overflow-hidden bg-[#0B1D3A] rounded-[3rem] p-2 shadow-2xl h-[500px]"
+            className="relative group overflow-hidden bg-white rounded-[3rem] p-2 border border-slate-100 shadow-xl h-[500px]"
           >
-            <div className="absolute inset-0 bg-[#0B1D3A]/40 z-10 group-hover:bg-transparent transition-all duration-700" />
-            <img 
-              src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80" 
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100 rounded-[2.5rem]" 
+            <div className="absolute inset-0 bg-brand-gold/5 group-hover:bg-transparent transition-colors z-10" />
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80" className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all duration-700 grayscale rounded-[2.5rem]" 
               alt="Playground"
             />
             <div className="absolute bottom-12 left-12 z-20">
-              <div className="w-12 h-12 bg-brand-gold text-brand-navy flex items-center justify-center mb-6 shadow-xl rounded-2xl">
+              <div className="w-12 h-12 bg-[#0B1D3A] text-brand-gold flex items-center justify-center mb-6 shadow-xl rounded-2xl">
                 <PlayCircle size={24} strokeWidth={1.5} />
               </div>
-              <h3 className="text-4xl font-serif font-black text-white mb-3 italic">Play <span className="not-italic text-brand-gold">Ground</span></h3>
-              <p className="text-white/60 text-[10px] font-black uppercase tracking-[0.3em]">Physical Education & Sports</p>
+              <h3 className="text-4xl font-serif font-black text-[#0B1D3A] mb-3 italic">Play <span className="not-italic">Ground</span></h3>
+              <p className="text-[#0B1D3A]/40 text-[10px] font-black uppercase tracking-[0.3em]">Physical Education & Sports</p>
             </div>
           </motion.div>
 
